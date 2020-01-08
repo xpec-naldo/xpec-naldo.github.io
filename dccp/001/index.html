@@ -8,10 +8,160 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Formax</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="https://grupoformax.com/">
+          <img src="img/logo formax.png" width="150" height="40" alt="">
+        </a>
+      </div>      
+    </nav>
+    
+    <div class="container" style="margin-top:90px;">
+
+      <div class="row">
+        <div class="col">
+          <h2>Autenticación en entornos locales</h2>
+          <div class="border border-success rounded px-2 mb-5">
+            <p></p>
+            <p><b>URL Mercado Público:</b> http://206.48.140.93/Home/Autenticacion?esNuevaHome</p>
+            <p><b>URL Ambiente local:</b> http://dccp-formaxdev.xpectrumtech.com/</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-primary">
+            Configurar el endpoint para consumir el servicio de obtención de información del usuario<br>
+            Para staging es <b>http://dominioscert.chilecompra.cl/v1/usuario-tienda</b>
+          </div>              
+          <div class="text-center">
+            <img src="img/00.png" alt="" class="img-fluid" /> 
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col">
+            <div class="alert alert-primary mt-5">
+              Iniciar sesión en Mercado Publico
+            </div>              
+            <div class="text-center">
+              <img src="img/01.png" alt="" class="img-fluid" /> 
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-primary mt-5">
+            Ingresar a <b>http://206.48.140.93/Autenticacion</b> y copiar el access_token
+          </div>              
+          <div class="text-center">
+            <img src="img/02.png" alt="" class="img-fluid" /> 
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-primary mt-5" style="word-break: break-all;">
+            Acceder de manera local a  <br>
+            http://dccp-formaxdev.xpectrumtech.com/loginmp/account/loggedin?<b>token</b>=eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlN01mM25YdXVzYlRGbXM4OUl1Zi03NlFpdGdRaUJlR3BNd1lfX0ptT3hVIn0.eyJqdGkiOiI5ZDk1NjY0NS03ZjBkLTRiYWMtODk1Yi1iOTVjYTYyYWY3NzEiLCJleHAiOjE1Nzg1MTY3NTEsIm5iZiI6MCwiaWF0IjoxNTc4NDg3OTUxLCJpc3MiOiJodHRwczovL3Nzby1xYS1zZWd1cmlkYWQtcmhzc28uYXBwcy5jaGlsZWNvbXByYS5jbC9hdXRoL3JlYWxtcy9jaGlsZWNvbXByYXJlYWxtIiwic3ViIjoiZjpmYmMxYWE5OC02ODNjLTQwYjctYmU3MC02YzQwZmJlZDIyYjY6MTIyMTE5NF81MDA5NzciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtZXJjYWRvUHVibGljb0NsaWVudCIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6Ijk4ZTFiMjE0LTBjOTgtNGI3OS1hYWQ1LWVhMTY1M2E4OGQ5ZSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiY29uc3Vtb3NlcnZpY2lvIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiY29kaWdvT3JnYW5pc21vIjoiNTAwOTc3IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjb2RpZ29Vc3VhcmlvIjoiMTIyMTE5NCIsIm5hbWUiOiJDcmlzdGlhbiAgTXXDsW96ICIsInRpcG9Vc3VhcmlvIjoiQ29tcHJhZG9yIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMTIyMTE5NF81MDA5NzciLCJnaXZlbl9uYW1lIjoiQ3Jpc3RpYW4gIE11w7FveiAifQ.JoxWzB214OpzRBRHiEUlHVTNcV_hIMGYvVzSvR3Mtf1NlSofOdzr4hzd69B_IzjA1o8Mpz3qPghUw22kPwMk50IljBLxjM5p8attAqTYMuu5K7X-3YUzu9Daergipr9xZHkV7YEtLAWMjIalbjadRushskYl7w4vqOoANfYDyn4CZSM90I1X3QEGbjVosH7aD1-5gAy3XIzdvpKXokwqtOhw6u8JgvfF8DXdMHfIeMHDqTLpHtBc8s-Z5ajt1Ax67A9PRyqwoOIzKn-F5bbjNxR113Mdx_UeNA8sZsAHbVuDo2ASw7mqSNzTKXB5yiw0lAN9luAVqyP1Uc3WOlPSlA&<b>idConvenio</b>=5800254<br>            
+          </div>              
+          <div class="text-center">
+            <img src="img/03.png" alt="" class="img-fluid" /> 
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col mt-5">
+          <h2 class="mt-5">Preparación de entorno multi-website</h2>          
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-primary mt-2">
+            Creación de categoría raíz(Opcional: creación de categorías del convenio)
+          </div>              
+          <div class="text-center">
+            <img src="img/04.png" alt="" class="img-fluid" /> 
+            <img src="img/05.png" alt="" class="img-fluid mt-2" /> 
+            <img src="img/06.png" alt="" class="img-fluid mt-2" /> 
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-primary mt-5">
+            Creación de website, store, y storeview. Reindexar y limpiar cache
+          </div>              
+          <div class="text-center">
+            <img src="img/14.png" alt="" class="img-fluid" /> 
+            <img src="img/07.png" alt="" class="img-fluid mt-2" /> 
+            <img src="img/08.png" alt="" class="img-fluid mt-2" /> 
+            <img src="img/09.png" alt="" class="img-fluid mt-2" /> 
+            <img src="img/10.png" alt="" class="img-fluid mt-2" /> 
+            <img src="img/11.png" alt="" class="img-fluid mt-2" /> 
+            <img src="img/12.png" alt="" class="img-fluid mt-2" /> 
+            <img src="img/13.png" alt="" class="img-fluid mt-2" /> 
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-primary mt-5">
+            Opcional. Configuraciones generales(ElasticSearch, configuración de modulos, FastlyCDN, etc)
+          </div>              
+          <div class="text-center">
+            <img src="img/15.png" alt="" class="img-fluid" /> 
+            <img src="img/16.png" alt="" class="img-fluid mt-2" /> 
+            <img src="img/17.png" alt="" class="img-fluid mt-2" /> 
+            <img src="img/18.png" alt="" class="img-fluid mt-2" /> 
+            <img src="img/19.png" alt="" class="img-fluid mt-2" /> 
+            <img src="img/19.png" alt="" class="img-fluid mt-2" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col mt-5">
+          <h2 class="mt-5">Carga de contenidos via CSV</h2>          
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-primary mt-5">
+            Carga de proveedores, condiciones regionales y ofertas
+          </div>              
+          <div class="text-center">
+            <img src="img/21.png" alt="" class="img-fluid" /> 
+            <img src="img/22.png" alt="" class="img-fluid mt-2" /> 
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col mb-5">
+          <div class="alert alert-primary mt-5">
+            Carga de costos de despacho
+          </div>              
+          <div class="text-center">
+            <img src="img/23.png" alt="" class="img-fluid" /> 
+            <img src="img/24.png" alt="" class="img-fluid mt-2" /> 
+          </div>
+        </div>
+      </div>
+
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
